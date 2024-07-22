@@ -103,7 +103,7 @@ PlayerSettings:
   xboxEnableFitness: 0
   visibleInBackground: 1
   allowFullscreenSwitch: 1
-  fullscreenMode: 1
+  fullscreenMode: 3
   xboxSpeechDB: 0
   xboxEnableHeadOrientation: 0
   xboxEnableGuest: 0
@@ -868,11 +868,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 89c96e20-e2da-4e28-ab89-8c917bb51372
+  cloudProjectId: c0cea2f5-061a-4e24-a89e-4096f4af9156
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: 4ir Lab
-  organizationId: sphesihle_mkhize
+  organizationId: cue_22148186
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

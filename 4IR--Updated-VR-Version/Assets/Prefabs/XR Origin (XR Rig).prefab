@@ -189,6 +189,7 @@ GameObject:
   - component: {fileID: 5364701834361680176}
   - component: {fileID: 3680078538722766050}
   - component: {fileID: 956008674600998522}
+  - component: {fileID: 7474419912826637803}
   m_Layer: 2
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -204,7 +205,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058099275789691120}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.98257786, z: -0, w: 0.18585166}
+  m_LocalRotation: {x: 0, y: -0.98257715, z: 0, w: 0.18585525}
   m_LocalPosition: {x: -13.9, y: 6, z: -10.95}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
@@ -327,6 +328,22 @@ MonoBehaviour:
   m_AimAssistRequiredSpeed: 0.25
   m_AimAssistPercent: 0.8
   m_AimAssistMaxSpeedPercent: 10
+--- !u!114 &7474419912826637803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058099275789691120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e15f27188d3cc74bb25926e2659ea64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  root: {fileID: 3969772091938791763}
+  head: {fileID: 998253141033992638}
+  LeftHand: {fileID: 2274667612385597280}
+  RightHand: {fileID: 417227515662297500}
 --- !u!1 &2699422932417062225
 GameObject:
   m_ObjectHideFlags: 0

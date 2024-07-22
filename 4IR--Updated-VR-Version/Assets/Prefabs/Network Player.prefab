@@ -70,8 +70,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   root: {fileID: 1658357429257109238}
   head: {fileID: 2446624575124921851}
-  leftHand: {fileID: 0}
-  rightHand: {fileID: 0}
 --- !u!114 &3332052187442064689
 MonoBehaviour:
   m_ObjectHideFlags: 0
