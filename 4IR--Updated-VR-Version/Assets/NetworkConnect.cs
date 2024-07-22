@@ -58,11 +58,15 @@ public class NetworkConnect : MonoBehaviour
         currentLobby = await Lobbies.Instance.CreateLobbyAsync("Lobby Name",maxConnection, lobbyOptions);
         NetworkManager.Singleton.StartHost();
     }
-/*
+
     public void Update() {
         if (heartBeatTimer>15){
             heartBeatTimer -= 15;
-            if ()
+            if (currentLobby != null && currentLobby.HostId == AuthenticationService.Instance.PlayerId)
+            {
+                LobbyService.Instance.SendHeartbeatPingAsync(currentLobby.Id);
+            }
         }
-    } */
+        heartBeatTimer += Time.deltaTime;
+    } 
 }
