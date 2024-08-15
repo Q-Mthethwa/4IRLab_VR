@@ -33991,14 +33991,14 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
+  m_ContentType: 6
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 7
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 7
   m_RegexValue: 
   m_GlobalPointSize: 14
   m_CharacterLimit: 0
@@ -50100,7 +50100,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 402438608652583430, guid: 4cdbed81c04a9d049a16c58c79dcc733, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 417227515662297500, guid: 4cdbed81c04a9d049a16c58c79dcc733, type: 3}
       propertyPath: m_LocalPosition.y
@@ -50136,7 +50136,7 @@ PrefabInstance:
       objectReference: {fileID: 608196967}
     - target: {fileID: 3574619602318020157, guid: 4cdbed81c04a9d049a16c58c79dcc733, type: 3}
       propertyPath: m_CameraYOffset
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3574619602318020157, guid: 4cdbed81c04a9d049a16c58c79dcc733, type: 3}
       propertyPath: m_RequestedTrackingOriginMode
@@ -63918,7 +63918,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
