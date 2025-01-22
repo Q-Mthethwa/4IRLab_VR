@@ -6,6 +6,20 @@ using UnityEngine.UI; // Unity's UI system
 
 public class LogOutSript : MonoBehaviour
 {
+    //Called on first frame
+    void Start(){
+        // Check if the FirebaseAuth instance is initialized
+        if (FirebaseAuth.DefaultInstance != null)
+        {
+            // Log the user out
+            FirebaseAuth.DefaultInstance.SignOut();
+            Debug.Log("User logged out successfully.");
+        }
+        else
+        {
+            Debug.LogError("Firebase Auth is not initialized.");
+        }
+    }
     // Function called when the button is clicked
     public void OnPointClick()
     {

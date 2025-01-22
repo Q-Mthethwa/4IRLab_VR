@@ -41,7 +41,7 @@ public class LoginScript : MonoBehaviour
         FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task => {
             if (task.IsCompleted && task.Result == DependencyStatus.Available)
             {
-                
+                 
                 var auth = FirebaseAuth.DefaultInstance;
 
                 auth.StateChanged += AuthStateChanged;
@@ -150,9 +150,23 @@ public class LoginScript : MonoBehaviour
             Firebase.Auth.AuthResult authResult = loginTask.Result;
             user = authResult.User;
             string userId = user.UserId;
-            DatabaseReference userRef = databaseRef.Child("users").Child(userId);
-            Debug.Log("User logged in successfully: " + user.Email);
-            statusText.text = "Login Successful! \n"+ user.Email;
+            // Update the last login time
+            databaseRef.Child("users").Child(userId).Child("last_login").SetValueAsync(System.DateTime.UtcNow.ToString());
+
+            // Fetch the user's full name
+            databaseRef.Child("users").Child(userId).GetValueAsync().ContinueWithOnMainThread(task => {
+                if (task.IsCompleted)
+                {
+                    DataSnapshot snapshot = task.Result;
+                    string userName = snapshot.Child("full_name").Value.ToString();
+                    statusText.text = $"Welcome {userName}, you are logged in!";
+                    Debug.Log("Welcome " + userName + ", you are logged in!");
+                }
+                else
+                {
+                    Debug.LogError("Error fetching user data: " + task.Exception);
+                }
+            });
         }
     }
     

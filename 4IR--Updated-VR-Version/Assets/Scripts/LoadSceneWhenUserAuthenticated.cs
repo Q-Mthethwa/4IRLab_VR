@@ -8,16 +8,6 @@ public class LoadSceneWhenUserAuthenticated : MonoBehaviour
     [SerializeField] private string _sceneToLoad; 
     private FirebaseAuth auth;
 
-    // Start is called before the first frame update
-    private void Start()
-    {
-        // Initialize Firebase Authentication instance
-        auth = FirebaseAuth.DefaultInstance;
-        auth.StateChanged += HandleAuthStateChanged;
-        
-        // Check if the user is already authenticated when the scene loads
-        CheckUser();
-    }
     private void update()
     {
         // Initialize Firebase Authentication instance
